@@ -13,7 +13,6 @@ import javax.validation.ConstraintViolationException;
 
 @RestController
 @RequestMapping("/person")
-@CrossOrigin(origins = "*")
 public class PersonResource {
 
     @Autowired
