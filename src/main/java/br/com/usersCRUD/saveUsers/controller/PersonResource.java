@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.ConstraintViolationException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/person")
@@ -17,6 +18,15 @@ public class PersonResource {
 
     @Autowired
     private IPersonService personService;
+
+    @GetMapping("/")
+    public ResponseEntity<List<Person>> findAll() {
+        List<Person> results = personService.findAll();
+        if (results.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(results);
+    }
 
     @PostMapping("/")
     public ResponseEntity<Object> save(@RequestBody PersonDTO person) {
