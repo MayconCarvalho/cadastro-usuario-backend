@@ -1,9 +1,9 @@
-package br.com.firstDecision.saveUsers.controller;
+package br.com.usersCRUD.saveUsers.controller;
 
-import br.com.firstDecision.saveUsers.dto.PersonDTO;
-import br.com.firstDecision.saveUsers.entity.Person;
-import br.com.firstDecision.saveUsers.exception.InvalidPersonException;
-import br.com.firstDecision.saveUsers.service.IPersonService;
+import br.com.usersCRUD.saveUsers.dto.PersonDTO;
+import br.com.usersCRUD.saveUsers.entity.Person;
+import br.com.usersCRUD.saveUsers.exception.InvalidPersonException;
+import br.com.usersCRUD.saveUsers.service.IPersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -8,7 +8,7 @@
 		<version>2.7.18-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.firstDecision</groupId>
+	<groupId>br.com.usersCRUD</groupId>
 	<artifactId>saveUsers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>saveUsers</name>

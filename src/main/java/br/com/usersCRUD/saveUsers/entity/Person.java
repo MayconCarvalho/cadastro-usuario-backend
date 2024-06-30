@@ -1,4 +1,4 @@
-package br.com.firstDecision.saveUsers.entity;
+package br.com.usersCRUD.saveUsers.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

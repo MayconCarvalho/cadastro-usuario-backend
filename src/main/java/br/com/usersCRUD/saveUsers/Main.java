@@ -1,4 +1,4 @@
-package br.com.firstDecision.saveUsers;
+package br.com.usersCRUD.saveUsers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package br.com.firstDecision.saveUsers.mapper;
+package br.com.usersCRUD.saveUsers.mapper;
 
-import br.com.firstDecision.saveUsers.dto.PersonDTO;
-import br.com.firstDecision.saveUsers.entity.Person;
+import br.com.usersCRUD.saveUsers.dto.PersonDTO;
+import br.com.usersCRUD.saveUsers.entity.Person;
 
 public class PersonMapper {
 

@@ -1,4 +1,4 @@
-package br.com.firstDecision.saveUsers.dto;
+package br.com.usersCRUD.saveUsers.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,10 +1,10 @@
-package br.com.firstDecision.saveUsers.service;
+package br.com.usersCRUD.saveUsers.service;
 
-import br.com.firstDecision.saveUsers.dto.PersonDTO;
-import br.com.firstDecision.saveUsers.entity.Person;
-import br.com.firstDecision.saveUsers.exception.InvalidPersonException;
-import br.com.firstDecision.saveUsers.mapper.PersonMapper;
-import br.com.firstDecision.saveUsers.repository.PersonRepository;
+import br.com.usersCRUD.saveUsers.dto.PersonDTO;
+import br.com.usersCRUD.saveUsers.entity.Person;
+import br.com.usersCRUD.saveUsers.exception.InvalidPersonException;
+import br.com.usersCRUD.saveUsers.mapper.PersonMapper;
+import br.com.usersCRUD.saveUsers.repository.PersonRepository;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

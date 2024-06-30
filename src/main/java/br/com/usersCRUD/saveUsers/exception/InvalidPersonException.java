@@ -1,4 +1,4 @@
-package br.com.firstDecision.saveUsers.exception;
+package br.com.usersCRUD.saveUsers.exception;
 
 import lombok.Getter;
 
