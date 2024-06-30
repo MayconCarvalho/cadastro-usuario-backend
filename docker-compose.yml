@@ -1,0 +1,32 @@
+services:
+  database:
+    image: postgres:9.6
+    container_name: cadastro-usuarios-database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "root"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+      - ./src/main/resources/scripts/:/docker-entrypoint-initdb.d/
+
+  backend-api:
+    image: cadastro-usuarios-backend-api:1.0
+    container_name: cadastro-usuarios-backend-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    environment:
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: users
+      DB_USERNAME: users
+      DB_PASSWORD: users
+
+volumes:
+  postgres_data:
+    driver: local
